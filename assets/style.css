@@ -1,0 +1,372 @@
+#Outer_Div {
+    height: 1000vh;
+    /* position: relative; */
+    background-image: radial-gradient(green, yellow, blue);
+    z-index: 0;
+
+
+}
+
+#Header {
+    position: sticky;
+    top: 0;
+    height: 150px;
+    margin-block-start: max-content;
+    background-color: blue;
+    border-bottom: 8px solid #4aaaa5;
+    z-index: 1;
+
+
+}
+
+#Your_Name {
+    float: left;
+    padding: 50px;
+    margin: 10px;
+
+
+}
+
+#name {
+    /* position: absolute; */
+    /* width: 300px; */
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px;
+    left: 490px;
+    bottom: 0%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    background-image: repeating-radial-gradient(hotpink, cyan);
+
+
+
+}
+
+#About {
+    float: right;
+    padding: 50px;
+    margin: 15px;
+
+}
+
+#Portfolio {
+    float: right;
+    padding: 50px;
+    margin: 15px;
+
+
+}
+
+#Contact {
+    float: right;
+    padding: 50px;
+    margin: 15px;
+
+
+}
+
+#Info {
+
+    float: inherit;
+    /* position: relative; */
+    left: 450px;
+    flex: 1 0 auto;
+
+    /* width: 960px; */
+    height: 480px;
+    border: 0px solid green;
+    padding: 50px;
+    margin: 20px;
+    z-index: 0;
+
+
+
+
+}
+
+#About_me {
+
+    /* position: absolute; */
+    left: 15px;
+    top: 5px;
+
+    /* width: 80px; */
+    border: 5px solid green;
+    padding: 5px;
+    margin: 5px;
+
+
+
+}
+
+.content {
+
+    display: inherit;
+
+
+
+}
+
+#image {
+
+    float: none;
+
+}
+
+#Car {
+
+    left: 60px;
+    top: 80px;
+    float: left;
+    height: 200px;
+    /* width: 200px; */
+    margin: 20px;
+
+
+}
+
+#footer {
+
+    position: sticky;
+    ;
+    height: 100px;
+    top: 910px;
+    padding: 0px;
+    border: 1px;
+    color: blue;
+    background-color: lightcoral;
+    z-index: 8;
+    border-top: 8px solid #4aaaa5;
+
+
+
+
+}
+
+#footer_tag {
+
+    position: absolute;
+    left: 800px;
+    top: 42px;
+
+
+}
+
+#contact_form {
+
+    float: inherit;
+    /* position: relative; */
+    left: 450px;
+    flex: 1 0 auto;
+
+    /* width: 960px; */
+    height: 480px;
+    border: 0px solid green;
+    padding: 50px;
+    margin: 20px;
+    z-index: 0;
+
+
+
+}
+
+#form {
+
+    /* position: absolute; */
+    right: 55%;
+    bottom: 25%;
+
+
+
+}
+
+#contact_name {
+
+    /* width: 280%; */
+
+}
+
+#email {
+
+    /* width: 280%; */
+
+
+
+}
+
+#message {
+
+    /* width: 280%; */
+    height: 25vh;
+
+
+
+}
+
+#footer_contact {
+
+    position: sticky;
+    height: 100px;
+    top: 910px;
+    padding: 0px;
+    border: 1px;
+    color: blue;
+    background-color: lightcoral;
+    z-index: 8;
+    border-top: 8px solid #4aaaa5;
+
+}
+
+.grid-item {
+
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0px;
+
+
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_image {
+
+    height: 150px;
+    /* width: 150px; */
+
+
+
+}
+
+#Portfolio_container {
+
+    position: relative;
+
+
+
+
+
+}
+
+
+#Portfolio_tag {
+
+    position: absolute;
+    background-color: lawngreen;
+    font-size: xx-large;
+    left: 450px;
+
+
+
+}
+
+@media screen and (min-width: 980px) {
+
+
+    /* So basically I dont think I used containers right the first go around, so now in order to get media quesries to work I'll need to find each container and add them to each media query with the correct widths on each to properly scale the webpage to make it responsive */
+    /* but if I had containers right, set the outer most to 100% at each level, then next set of containers to 75%width, then the third set at 50% width and so on so forth. */
+    #Outer_Div {
+
+        width: 100%;
+
+
+
+
+    }
+
+    #Header {
+        width: 100%;
+
+
+    }
+
+    #Info {
+        width: 75%;
+        position: absolute;
+
+
+    }
+
+    #About_me {
+
+        width: 75%;
+
+
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+        #Outer_Div {
+
+            width: 100%;
+        }
+
+        #Header {
+            width: 100%;
+
+
+        }
+
+
+
+
+        #Info {
+            width: 75%;
+            position: absolute;
+
+
+        }
+
+        #About_me {
+
+            width: 75%;
+
+
+        }
+
+    }
+
+
+
+    @media screen and (min-width: 640px) {
+
+        #Outer_Div {
+
+            width: 100%;
+            background-color: coral;
+
+
+
+        }
+
+        #Header {
+            position: static;
+            width: 100%;
+
+
+        }
+
+        #Info {
+            width: 75%;
+            position: absolute;
+
+        }
+
+        #About_me {
+
+            width: 75%;
+
+
+        }
+
+
+
+    }
+
+}
